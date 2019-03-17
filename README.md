@@ -1,6 +1,6 @@
 # WeRateDogs
 
-The project aimed to analyze the data in <a href = 'https://twitter.com/dog_rates'>"WeRateDogs"</a> channel on Twitter.com.<br>
+The project aimed to analyze the data in <a href = 'https://twitter.com/dog_rates'>"WeRateDogs"</a> channel on Twitter.com<br>
 
 ## Gathering Data
 First, we gather data from different sources:
