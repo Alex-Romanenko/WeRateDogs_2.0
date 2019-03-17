@@ -10,7 +10,11 @@ First, we gather data from different sources:
 - Twitter API - an archive of all tweets in the channel. We need to get additional information from the Twitter server. Since we have the tweet_id parameter in both files mentioned above, we going to extract particular data, associated with each tweet_id from the server.
 
 ## Assess and Clean Data
-We have three different sources of data and we need to get one solid data set with good quality and tidy data. Perform assessing data from each source and fix every issue we found to get data ready for analysis.
+We have three different sources of data and we need to get one solid data set with good quality and tidy data. Perform assessing data from each source and fix Quality and Tidiness issues we found to get data ready for analysis.
+
+## Storing Data
+
+After "assess and clean" stage we suppose to have a few different data frames with data associated with tweet_id. Plan to merge all data frames into one. Restructure final df if it needs and stores to the csv file.
 
 ## Analysis
 - Whether or not retweet count depends on the breed? If yes - what the top three breeds in retweets?
