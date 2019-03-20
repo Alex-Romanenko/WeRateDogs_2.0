@@ -17,10 +17,17 @@ We have three different sources of data and we need to get one solid data set wi
 After "assess and clean" stage we suppose to have a few different data frames with data associated with tweet_id. Plan to merge all data frames into one. Restructure final df if it needs and stores to the csv file.
 
 ## Analysis
-- Whether or not retweet count depends on the breed? If yes - what the top three breeds in retweets?
-- Whether or not favorite count depends on the breed? If yes - what the top three breeds in favorites?
-- Is there most popular dog names and what are they if exist?
-- Still on the air
+
+We want to get answers to the following questions:
+
+- What are the top three breeds holding most retweets?
+- What are the top three breeds holding favorites?
+- Are the breeds mentioned above are the same that holding most audience engagement (the sum of retweets and favorites)
+- How often is the top breed holding most engagement (in the following mention just 'top breed') mentioned in tweets?
+- What is the set of words for tweets with the top breed?
+- How often the words from the top-breed-set appeared in tweets?
+- Are there some words, that more specific for the top breed?
+- We have a huuuge amount of other questions and gonna find their answers in other projects))
 
 ## Technologies
 - Python
