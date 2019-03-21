@@ -13135,10 +13135,10 @@ div#notebook {
 <li>Columns 'retweeted_status_id', 'retweeted_status_user_id', 'retweeted_status_timestamp' are lack of data. Drop'm</li>
 <li>Some cells in column 'expanded_urls' has two or more urls and some of urls doesn't belong to WeRateDogs chanel.</li>
 <li>Duplicated and missing data in column 'expanded_urls' </li>
+<li>Column 'rating_numerator' should of type float and also it should be correctly extracted to get decimal data.</li>
 <li>Column 'rating_numerator' has several outliers, so need to get closer what are they exactly.</li>
 <li>Column 'rating_denominator' - need to figure out the outliers.</li>
 <li>Column 'name' has some wrong data such as 'None' and other words that not suppose to be the names of dogs. Need to figure out how to handle them.</li>
-<li>Columns 'doggo', 'floffer', 'pupper', 'puppo' need to be merged in one column since they holds different values of one variable.</li>
 </ul>
 <p><strong>predict dat aframe - from *.tsv file</strong></p>
 <ul>
@@ -13153,10 +13153,15 @@ div#notebook {
 <h3 id="Tidiness">Tidiness<a class="anchor-link" href="#Tidiness">&#182;</a></h3><p><strong>df</strong></p>
 <ul>
 <li>Column 'text' has two types of data, associated with different variables: 1) The text of the tweet, 2) The link to the tweet. The link to the tweet is the same link that stored in the column named ' expanded_urls'. So, the data in column 'text' need to be separated and we need to keep just part 1 - actually the text of the tweet.</li>
+<li>Columns 'doggo', 'floffer', 'pupper', 'puppo' need to be merged in one column since they holds different values of one variable.</li>
 </ul>
 <p><strong>predict</strong></p>
 <ul>
 <li>All predictions are different level of confident of prediction the value of one variable. We need to form one column with predicted dog  breed name associated with particular tweet_id in descendent priority order: p1&gt;p2&gt;p3</li>
+</ul>
+<p><strong>Different data frames</strong></p>
+<ul>
+<li>Three data frames for the same observation. Need to merge them into one and check the duplicated info in columns</li>
 </ul>
 <p><strong>At the final stage, we have the final data frame</strong> contain all data we got in one place. We saved this data frame in a file, 'twitter_archive_master.csv', and used its data in analysis and visualization, placed and described in a file 'act_report.pdf'.</p>
 
